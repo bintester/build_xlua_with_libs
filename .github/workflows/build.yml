@@ -115,6 +115,7 @@ jobs:
       - name: Build
         run: |
           cd build
+          chmod +x *.sh
           ./make_osx_lua54.sh
           ./make_osx_lua53.sh
           ./make_osx_luajit.sh
